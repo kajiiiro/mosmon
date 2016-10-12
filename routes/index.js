@@ -28,7 +28,7 @@ client.on('message', function(topic, message) {
   if (Buffer.isBuffer(message)) {
     message = message.toString();
   }
-  messages.push({topic: topic, message: message});
+  messages.push({topic: topic, message: message, date: Date.now()});
 });
 
 router.get('/mqtt', function(req, res, next) {
