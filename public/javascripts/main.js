@@ -1,4 +1,6 @@
-var monitor = function() {
+var mosmon = mosmon || {};
+
+mosmon.monitor = function() {
   $.ajax({
     type    : 'GET',
     url     : '/mqtt',
@@ -11,9 +13,15 @@ var monitor = function() {
       });
     }
   });
+};
+
+mosmon.topics = {};
+
+mosmon.addMosData = function(topic, message) {
+  var hash = CryptoJS.SHA256(topic);
 
 };
 
 $(function() {
-  setInterval(monitor, 3000);
+  setInterval(mosmon.monitor, 3000);
 });
