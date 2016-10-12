@@ -35,7 +35,7 @@ router.get('/mqtt', function(req, res, next) {
   var limit = Math.min(30, messages.length); // 一回で取得できる数を最大30に制限する
   var _messages = messages.slice(0, 30);
   for (var i = 0;i < limit;++i) {
-    message.shift();
+    messages.shift();
   }
   res.json(_messages);
 });
