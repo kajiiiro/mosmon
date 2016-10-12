@@ -1,8 +1,27 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.mosmon_item {
+  width: 100%;
+  margin: 0;
+}
+
+.mosmon_topic {
+  width: 350px;
+  float: left;
+}
+
+.mosmon_message {
+  width: 100px;
+  float: left;
+}
+
+.mosmon_date {
+  width: 350px;
+  float: left;
 }

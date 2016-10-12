@@ -18,24 +18,24 @@ mosmon.topics = {};
 mosmon.createHtml = function(item) {
   var date = new Date(item.date).toISOString();
   return (
-      '<span class="mosmon_topic">'   + item.topic   + '</span>'
-    + ' : '
-    + '<span class="mosmon_message">' + item.message + '</span>'
-    + '<span class="mosmon_date">'    + date         + '</span>'
+      '<div class="mosmon_topic">'   + item.topic   + '</div>'
+    + '<div class="mosmon_message">' + item.message + '</div>'
+    + '<div class="mosmon_date">'    + date         + '</div>'
   );
 };
 
 mosmon.addMosData = function(item) {
-  var hash = CryptoJS.SHA256(item.topic);
-  if (!mosmon.topics[hash]) {
-    mosmon.topics[hash] = item;
-    $('#main').prepend('<p id="' + hash + '">'
-      + mosmon.createHtml(item) + '</p>'
+  // remove $SYS
+  var key = item.topic.split('/').slice(1).join('_');
+  if (!mosmon.topics[key]) {
+    mosmon.topics[key] = item;
+    $('#main').prepend('<div class="mosmon_item" id="' + key + '">'
+      + mosmon.createHtml(item) + '</div>'
     );
     return;
   }
-  mosmon.topics[hash] = item;
-  $('#' + hash).html(mosmon.createHtml(item));
+  mosmon.topics[key] = item;
+  $('#' + key).html(mosmon.createHtml(item));
 };
 
 $(function() {
