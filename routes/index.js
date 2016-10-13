@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
 var mqtt = require('mqtt');
 var options = {
   clientId: 'mosmon',
+  username: 'mosmon',
+  password: 'mosmonpassword',
 };
 var client = mqtt.connect('mqtt://localhost', options);
 client.on('connect', function() {

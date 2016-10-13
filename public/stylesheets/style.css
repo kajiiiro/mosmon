@@ -17,11 +17,11 @@ a {
 }
 
 .mosmon_message {
-  width: 100px;
+  width: 250px;
   float: left;
 }
 
 .mosmon_date {
-  width: 350px;
+  width: 200px;
   float: left;
 }

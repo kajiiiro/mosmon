@@ -13,7 +13,7 @@ mosmon.monitor = function() {
   });
 };
 
-mosmon.topics = {};
+mosmon.topics = mosmon.topics || {};
 
 mosmon.createHtml = function(item) {
   var date = new Date(item.date).toISOString();
@@ -24,20 +24,27 @@ mosmon.createHtml = function(item) {
   );
 };
 
-mosmon.addMosData = function(item) {
+mosmon.generateKey = function(topic) {
   // remove $SYS
-  var key = item.topic.split('/').slice(1).join('_');
+  var key = topic.split('/').slice(1).join('_');
+  // space changed 'SPACE'
+  key = key.split(' ').join('SPACE');
+  return key;
+}
+
+mosmon.addMosData = function(item) {
+  var key = mosmon.generateKey(item.topic);
   if (!mosmon.topics[key]) {
-    mosmon.topics[key] = item;
+    mosmon.topics[key] = true;
     $('#main').prepend('<div class="mosmon_item" id="' + key + '">'
-      + mosmon.createHtml(item) + '</div>'
+      + mosmon.createHtml(item) + '</div><br />'
     );
     return;
   }
-  mosmon.topics[key] = item;
   $('#' + key).html(mosmon.createHtml(item));
 };
 
 $(function() {
+  setTimeout(mosmon.monitor, 500);
   setInterval(mosmon.monitor, 3000);
 });

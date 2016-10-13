@@ -1,0 +1,1358 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 14">
+<link id=Main-File rel=Main-File href="../descriveTopic.html">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:6.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"�l�r �o�S�V�b�N", monospace;
+	mso-font-charset:128;
+	mso-char-type:katakana;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../descriveTopic.html");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1137 style='border-collapse:
+ collapse;table-layout:fixed;width:854pt'>
+ <col class=xl65 width=300 style='mso-width-source:userset;mso-width-alt:7840;
+ width:184pt'>
+ <col class=xl65 width=300 span=2 style='mso-width-source:userset;mso-width-alt:
+ 7840;width:184pt'>
+ <col width=402 style='mso-width-source:userset;mso-width-alt:12864;width:302pt'>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:white;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border-top:1.0pt solid black;
+  border-right:.5pt solid black;border-bottom:1.0pt solid black;border-left:
+  .5pt solid black;background:black;mso-pattern:black none'>TOPIC by real mqtt
+  1.4.10</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border-top:1.0pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:black;
+  mso-pattern:black none'>TOPIC by https://mosquitto.org/man/mosquitto-8.html</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border-top:1.0pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:black;
+  mso-pattern:black none'>merge</td>
+  <td width=402 style='width:302pt;font-size:11.0pt;color:white;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"�l�r �o�S�V�b�N";border-top:1.0pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:black;
+  mso-pattern:black none'>describe</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/bytes/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/bytes/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/bytes/received</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of bytes received since the broker
+  started.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/bytes/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/bytes/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/bytes/sent</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The total number of
+  bytes sent since the broker started.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/clients/active</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/active (deprecated)</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/active (deprecated)</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The number of currently connected clients.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/connected</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px'>$SYS/broker/clients/connected<br />$SYS/broker/clients/active(deprecated)</span></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px'>$SYS/broker/clients/connected<br />$SYS/broker/clients/active(deprecated)</span></td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The number of currently
+  connected clients.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/clients/disconnected</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px'>$SYS/broker/clients/disconnected<br />$SYS/broker/clients/inactive<br />(deprecated)</span></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px'>$SYS/broker/clients/disconnected<br />$SYS/broker/clients/inactive<br />(deprecated)</span></td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of persistent clients (with clean
+  session disabled) that are registered at the broker but are currently
+  disconnected.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/expired</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/expired</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/expired</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The number of
+  disconnected persistent clients that have been expired and removed through
+  the persistent_client_expiration option.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/clients/inactive</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/inactive (deprecated)</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/inactive (deprecated)</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of persistent clients (with clean
+  session disabled) that are registered at the broker but are currently
+  disconnected.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/maximum</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/maximum</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/clients/maximum</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The maximum number of
+  clients that have been connected to the broker at the same time.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/clients/total</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/total</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/clients/total</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of active and inactive clients
+  currently connected and registered on the broker.</td>
+ </tr>
+ <tr height=126 style='height:94.5pt'>
+  <td height=126 class=xl65 width=300 style='height:94.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/connection/#</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/connection/#</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>When bridges are
+  configured to/from the broker, common practice is to provide a status topic
+  that indicates the state of the connection. This is provided within
+  $SYS/broker/connection/ by default. If the value of the topic is 1 the
+  connection is active, if 0 then it is not active. See the Bridges section
+  below for more information on bridges.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/heap/current</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/heap/current size</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/heap/current size</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The current size of the heap memory in use by
+  mosquitto. Note that this topic may be unavailable depending on compile time
+  options.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/heap/maximum</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/heap/maximum
+  size</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/heap/maximum
+  size</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The largest amount of
+  heap memory used by mosquitto. Note that this topic may be unavailable
+  depending on compile time options.</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/received/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/received/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/received/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The moving average of the number of bytes received
+  by the broker over different time intervals. The final &quot;+&quot; of the
+  hierarchy can be 1min, 5min or 15min. The value returned represents the
+  number of bytes received in 1 minute, averaged over 1, 5 or 15 minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/received/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/received/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/received/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/received/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/sent/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/sent/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/sent/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The moving average of
+  the number of bytes sent by the broker over different time intervals. The
+  final &quot;+&quot; of the hierarchy can be 1min, 5min or 15min. The value
+  returned represents the number of bytes sent in 1 minute, averaged over 1, 5
+  or 15 minutes.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/sent/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/bytes/sent/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/sent/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/bytes/sent/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/connections/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/connections/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/connections/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The moving average of the number of CONNECT packets
+  received by the broker over different time intervals. The final &quot;+&quot;
+  of the hierarchy can be 1min, 5min or 15min. The value returned represents
+  the number of connections received in 1 minute, averaged over 1, 5 or 15
+  minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/connections/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/connections/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/connections/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/connections/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/received/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/received/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/received/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The moving average of
+  the number of all types of MQTT messages received by the broker over
+  different time intervals. The final &quot;+&quot; of the hierarchy can be
+  1min, 5min or 15min. The value returned represents the number of messages
+  received in 1 minute, averaged over 1, 5 or 15 minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/received/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/received/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/received/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/received/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/sent/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/sent/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/sent/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The moving average of the number of all types of
+  MQTT messages sent by the broker over different time intervals. The final
+  &quot;+&quot; of the hierarchy can be 1min, 5min or 15min. The value returned
+  represents the number of messages send in 1 minute, averaged over 1, 5 or 15
+  minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/sent/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/messages/sent/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/sent/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/messages/sent/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=126 style='height:94.5pt'>
+  <td height=126 class=xl65 width=300 style='height:94.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/dropped/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/dropped/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The moving average of
+  the number of publish messages dropped by the broker over different time
+  intervals. This shows the rate at which durable clients that are disconnected
+  are losing messages. The final &quot;+&quot; of the hierarchy can be 1min,
+  5min or 15min. The value returned represents the number of messages dropped
+  in 1 minute, averaged over 1, 5 or 15 minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/dropped/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'></td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/dropped/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/received/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/dropped/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The moving average of the number of publish
+  messages received by the broker over different time intervals. The final
+  &quot;+&quot; of the hierarchy can be 1min, 5min or 15min. The value returned
+  represents the number of publish messages received in 1 minute, averaged over
+  1, 5 or 15 minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'></td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/dropped/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/dropped/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/sent/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/sent/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/sent/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The moving average of
+  the number of publish messages sent by the broker over different time
+  intervals. The final &quot;+&quot; of the hierarchy can be 1min, 5min or
+  15min. The value returned represents the number of publish messages sent in 1
+  minute, averaged over 1, 5 or 15 minutes.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/sent/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/publish/sent/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/sent/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/publish/sent/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=90 style='height:67.5pt'>
+  <td height=90 class=xl65 width=300 style='height:67.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/sockets/15min</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/sockets/+</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/sockets/15min</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The moving average of the number of socket
+  connections opened to the broker over different time intervals. The final
+  &quot;+&quot; of the hierarchy can be 1min, 5min or 15min. The value returned
+  represents the number of socket connections in 1 minute, averaged over 1, 5
+  or 15 minutes.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/sockets/1min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/load/sockets/1min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/load/sockets/5min</td>
+  <td class=xl67 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/load/sockets/5min</td>
+  <td class=xl67 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:yellow;
+  mso-pattern:black none'>ditto</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'></td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/messages/inflight</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/messages/inflight</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The number of messages
+  with QoS&gt;0 that are awaiting acknowledgments.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/messages/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/messages/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/messages/received</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of messages of any type received
+  since the broker started.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/messages/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/messages/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/messages/sent</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The total number of
+  messages of any type sent since the broker started.</td>
+ </tr>
+ <tr height=54 style='height:40.5pt'>
+  <td height=54 class=xl65 width=300 style='height:40.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/messages/stored</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/messages/stored</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/messages/stored</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The number of messages currently held in the
+  message store. This includes retained messages and messages queued for
+  durable clients.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/bytes/received</td>
+  <td class=xl68 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:red;
+  mso-pattern:black none'>nothinig</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/bytes/received</td>
+  <td class=xl68 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:red;
+  mso-pattern:black none'>nothinig</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/publish/bytes/sent</td>
+  <td class=xl68 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:red;
+  mso-pattern:black none'>nothinig</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/publish/bytes/sent</td>
+  <td class=xl68 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:red;
+  mso-pattern:black none'>nothinig</td>
+ </tr>
+ <tr height=72 style='height:54.0pt'>
+  <td height=72 class=xl65 width=300 style='height:54.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/dropped</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/dropped</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/dropped</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The total number of
+  publish messages that have been dropped due to inflight/queuing limits. See
+  the max_inflight_messages and max_queued_messages options in
+  mosquitto.conf(5) for more information.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/publish/messages/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/publish/messages/received</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/publish/messages/received</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of PUBLISH messages received since
+  the broker started.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/sent</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/publish/messages/sent</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The total number of
+  PUBLISH messages sent since the broker started.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/retained
+  messages/count</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/retained messages/count</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/retained messages/count</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The total number of retained messages active on the
+  broker.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/subscriptions/count</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/subscriptions/count</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/subscriptions/count</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The total number of
+  subscriptions active on the broker.</td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 class=xl65 width=300 style='height:27.0pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;
+  background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/timestamp</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/timestamp</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/timestamp</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The timestamp at which this particular build of the
+  broker was made. Static.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/uptime</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/uptime</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>$SYS/broker/uptime</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border:.5pt solid black'>The amount of time in
+  seconds the broker has been online.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:300pt;
+  font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"�l�r �o�S�V�b�N";border-top:.5pt solid black;
+  border-right:.5pt solid black;border-bottom:1.0pt solid black;border-left:
+  .5pt solid black;background:#D9D9D9;mso-pattern:#D9D9D9 none'>$SYS/broker/version</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border-top:.5pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/version</td>
+  <td class=xl65 width=300 style='width:300pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border-top:.5pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>$SYS/broker/version</td>
+  <td class=xl65 width=402 style='width:302pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:"�l�r �o�S�V�b�N";border-top:.5pt solid black;border-right:.5pt solid black;
+  border-bottom:1.0pt solid black;border-left:.5pt solid black;background:#D9D9D9;
+  mso-pattern:#D9D9D9 none'>The version of the broker. Static.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 width=300 style='height:13.5pt;width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl65 width=300 style='width:184pt'></td>
+  <td class=xl66></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=300 style='width:184pt'></td>
+  <td width=300 style='width:184pt'></td>
+  <td width=300 style='width:184pt'></td>
+  <td width=402 style='width:302pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
