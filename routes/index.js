@@ -11,8 +11,9 @@ var options = {
   clientId: 'mosmon',
   username: 'mosmon',
   password: 'mosmonpassword',
+  rejectUnauthorized: false,
 };
-var client = mqtt.connect('mqtt://localhost', options);
+var client = mqtt.connect('mqtts://localhost', options);
 client.on('connect', function() {
   console.log('mqtt connect');
   client.subscribe('$SYS/#', function(error) {
