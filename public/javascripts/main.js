@@ -1,5 +1,7 @@
 var mosmon = mosmon || {};
 
+mosmon.intervalTime = 3000;
+
 mosmon.generateKey = function(topic) {
   // remove $SYS
   var key = topic.split('/').slice(1).join('_');
@@ -34,7 +36,9 @@ mosmon.addMosData = function(item) {
     mosmon.newItem(key, item);
     return;
   }
-  $('#' + key).html(mosmon.createHtml(item));
+  $('#' + key)
+    .html(mosmon.createHtml(item))
+    .children().effect('highlight', {color: '#ff9999'}, mosmon.intervalTime);
 };
 
 mosmon.monitor = function() {
@@ -114,5 +118,5 @@ mosmon.initTopic = function() {
 $(function() {
   mosmon.initTopic();
   setTimeout(mosmon.monitor, 500);
-  setInterval(mosmon.monitor, 3000);
+  setInterval(mosmon.monitor, mosmon.intervalTime);
 });
